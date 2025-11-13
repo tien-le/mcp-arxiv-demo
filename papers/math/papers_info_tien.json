@@ -1,0 +1,58 @@
+{
+  "2103.03874v2": {
+    "title": "Measuring Mathematical Problem Solving With the MATH Dataset",
+    "authors": [
+      "Dan Hendrycks",
+      "Collin Burns",
+      "Saurav Kadavath",
+      "Akul Arora",
+      "Steven Basart",
+      "Eric Tang",
+      "Dawn Song",
+      "Jacob Steinhardt"
+    ],
+    "summary": "Many intellectual endeavors require mathematical problem solving, but this skill remains beyond the capabilities of computers. To measure this ability in machine learning models, we introduce MATH, a new dataset of 12,500 challenging competition mathematics problems. Each problem in MATH has a full step-by-step solution which can be used to teach models to generate answer derivations and explanations. To facilitate future research and increase accuracy on MATH, we also contribute a large auxiliary pretraining dataset which helps teach models the fundamentals of mathematics. Even though we are able to increase accuracy on MATH, our results show that accuracy remains relatively low, even with enormous Transformer models. Moreover, we find that simply increasing budgets and model parameter counts will be impractical for achieving strong mathematical reasoning if scaling trends continue. While scaling Transformers is automatically solving most other text-based tasks, scaling is not currently solving MATH. To have more traction on mathematical problem solving we will likely need new algorithmic advancements from the broader research community.",
+    "pdf_url": null,
+    "published": "2021-03-05"
+  },
+  "2312.01048v1": {
+    "title": "A correction of \"On the numerical ranges of matrices in max algebra\", Banach J. Math. Anal. 14 (2020), 1773-1792",
+    "authors": [
+      "Mohsen Zahraei"
+    ],
+    "summary": "We correct some unfortunate mistakes that appeared in the article D. Taghizadeh, M. Zahraei, A. Peperko and N. H. Aboutalebi, On the numerical ranges of matrices in max algebra, Banach j. Math. Anal., 14 (2020), pp. 1773-1792 concerning certain notions of the numerical range in the max algebra setting.To do this we also include a study of the charactristic max polynomial and correspondingly the max $k-$spectrum and the $k-$tropical spectrum. We also pose a nonresolved open questions.",
+    "pdf_url": null,
+    "published": "2023-12-02"
+  },
+  "2310.09590v2": {
+    "title": "Solving Math Word Problems with Reexamination",
+    "authors": [
+      "Yi Bin",
+      "Wenhao Shi",
+      "Yujuan Ding",
+      "Yang Yang",
+      "See-Kiong Ng"
+    ],
+    "summary": "Math word problem (MWP) solving aims to understand the descriptive math problem and calculate the result, for which previous efforts are mostly devoted to upgrade different technical modules. This paper brings a different perspective of \\textit{reexamination process} during training by introducing a pseudo-dual task to enhance the MWP solving. We propose a pseudo-dual (PseDual) learning scheme to model such process, which is model-agnostic thus can be adapted to any existing MWP solvers. The pseudo-dual task is specifically defined as filling the numbers in the expression back into the original word problem with numbers masked. To facilitate the effective joint learning of the two tasks, we further design a scheduled fusion strategy for the number infilling task, which smoothly switches the input from the ground-truth math expressions to the predicted ones. Our pseudo-dual learning scheme has been tested and proven effective when being equipped in several representative MWP solvers through empirical studies. \\textit{The codes and trained models are available at:} \\url{https://github.com/steven640pixel/PsedualMWP}. \\end{abstract}",
+    "pdf_url": null,
+    "published": "2023-10-14"
+  },
+  "math-ph/0301030v1": {
+    "title": "Erratum: Pseudo-Hermiticity for a class of nondiagonalizable Hamiltonians [J. Math. Phys. 43, 6343 (2002); math-ph/0207009]",
+    "authors": [
+      "Ali Mostafazadeh"
+    ],
+    "summary": "An error in the paper [J. Math. Phys. 43, 6343 (2002); math-ph/0207009] is corrected. Further explanation is given.",
+    "pdf_url": null,
+    "published": "2003-01-22"
+  },
+  "1210.7744v1": {
+    "title": "A proof of the Quadratic Reciprocity Law",
+    "authors": [
+      "Math Dicker"
+    ],
+    "summary": "A proof of the Quadratic Reciprocity Law is presented using a Lemma of Gauss, the theory of finite fields and the Frobenius automorfism.",
+    "pdf_url": null,
+    "published": "2012-10-26"
+  }
+}

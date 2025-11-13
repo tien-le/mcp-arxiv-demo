@@ -1,0 +1,24 @@
+{
+    "mcpServers": {
+        "filesystem": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "@modelcontextprotocol/server-filesystem",
+                "/home/lavie/dev/LAVIE-tickets-work/LAVIE-65-MCP/demo_mcp/notebooks/mcp_project"
+            ]
+        },
+        "research": {
+            "command": "/home/lavie/dev/LAVIE-tickets-work/LAVIE-65-MCP/demo_mcp/.venv/bin/python",
+            "args": [
+                "/home/lavie/dev/LAVIE-tickets-work/LAVIE-65-MCP/demo_mcp/notebooks/mcp_project/tien_mcp_server.py"
+            ]
+        },
+        "fetch": {
+            "command": "uvx",
+            "args": [
+                "mcp-server-fetch"
+            ]
+        }
+    }
+}
