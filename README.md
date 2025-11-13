@@ -162,4 +162,11 @@ The MCP server provides:
   - `generate_search_prompt`: Generate a prompt for searching papers
 - **Command for updating requirements.txt**
 
-  - uv pip compile pyproject.toml > requirements.txt
+  `uv pip compile pyproject.toml > requirements.txt`
+- **Command for github**
+
+  ```bash
+  $ git remote add origin https://github.com/tien-le/mcp-arxiv-demo
+
+  $ git remote -v
+  ```
