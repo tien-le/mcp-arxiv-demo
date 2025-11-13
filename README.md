@@ -170,3 +170,29 @@ The MCP server provides:
 
   $ git remote -v
   ```
+
+## Deployment on Render
+
+https://dashboard.render.com > MONITOR > Logs
+
+```bash
+...
+==> Deploying...
+==> Running 'python mcp_server.py'
+INFO:     Started server process [56]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:10000 (Press CTRL+C to quit)
+Running MCP server...
+MCP Server will be available at: http://0.0.0.0:10000/sse
+Make sure this server is running before starting the MCP Inspector!
+INFO:     127.0.0.1:46312 - "HEAD / HTTP/1.1" 404 Not Found
+     ==> Your service is live 🎉
+     ==> 
+     ==> ///////////////////////////////////////////////////////////
+     ==> 
+     ==> Available at your primary URL https://mcp-arxiv-demo.onrender.com
+     ==> 
+     ==> ///////////////////////////////////////////////////////////
+
+```
