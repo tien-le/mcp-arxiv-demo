@@ -180,7 +180,7 @@ if __name__ == "__main__":
     asyncio.run(main())
 
 """
-(demo_mcp) mcp_project$ uv run tien_mcp_client.py
+(demo_mcp) mcp_project$ uv run mcp_client.py
 [11/11/25 15:17:50] INFO     Processing request of type ListToolsRequest                                                                       server.py:674
 
 List of available tools: ['search_papers', 'extract_info']

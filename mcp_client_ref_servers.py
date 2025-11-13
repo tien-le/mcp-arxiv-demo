@@ -220,10 +220,10 @@ if __name__ == "__main__":
     asyncio.run(main())
 
 """
-(demo_mcp) lavie@thai-do:~/dev/LAVIE-tickets-work/LAVIE-65-MCP/demo_mcp/notebooks/mcp_project$ uv run tien_mcp_client_ref_servers.py
+(demo_mcp) mcp_project$ uv run tien_mcp_client_ref_servers.py
 Secure MCP Filesystem Server running on stdio
 Client does not support MCP Roots, using allowed directories set from server args: [
-  '/home/lavie/dev/LAVIE-tickets-work/LAVIE-65-MCP/demo_mcp/notebooks/mcp_project'
+  '/mcp_project'
 ]
 
 Connected to filesystem with tools: ['read_file', 'read_text_file', 'read_media_file', 'read_multiple_files', 'write_file', 'edit_file', 'create_directory', 'list_directory', 'list_directory_with_sizes', 'directory_tree', 'move_file', 'search_files', 'get_file_info', 'list_allowed_directories']
