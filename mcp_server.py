@@ -2,14 +2,18 @@ import json
 import os
 
 import arxiv
+import uvicorn
 from fastapi.middleware.cors import CORSMiddleware
 from mcp.server.fastmcp import FastMCP
 
 PAPER_DIR = "papers"
 JSON_FILENAME = "papers_info_tien.json"
 
+# Get port from environment variable (Render sets this) or default to 8001
+PORT = int(os.environ.get("PORT", 8001))
+
 # Init FastMCP Server
-mcp = FastMCP(name="research", port=8001)
+mcp = FastMCP(name="research", port=PORT)
 
 # Wrap sse_app to add CORS middleware
 original_sse_app = mcp.sse_app
@@ -185,6 +189,9 @@ def generate_search_prompt(topic: str, max_results: int = 5) -> str:
 
 if __name__ == "__main__":
     print("Running MCP server...")
-    print("MCP Server will be available at: http://localhost:8001/sse")
+    print(f"MCP Server will be available at: http://0.0.0.0:{PORT}/sse")
     print("Make sure this server is running before starting the MCP Inspector!")
-    mcp.run(transport="sse")
+    # Get the FastAPI app with CORS middleware
+    app = mcp.sse_app()
+    # Run with uvicorn, binding to 0.0.0.0 to allow external connections (required for Render)
+    uvicorn.run(app, host="0.0.0.0", port=PORT)
